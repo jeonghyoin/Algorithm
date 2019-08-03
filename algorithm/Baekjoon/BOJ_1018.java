@@ -33,9 +33,8 @@ public class BOJ_1018 {
 		int X = Integer.parseInt(XY[1]);
 		int Y = Integer.parseInt(XY[0]);
 		
-		char array[][] = new char[X][Y];
-		
 		//2차원 배열에 넣기
+		char array[][] = new char[X][Y];
 		for(int y=0; y<Y; y++) {
 			String input =  rd.readLine();
 			for(int x=0; x<X; x++) {
@@ -51,18 +50,17 @@ public class BOJ_1018 {
 	}
 	
 	public static int getDif(char[][] array, char[][] targetChess, int indexX, int indexY) {
-		int dif = 0;
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		
+		int dif = 0;
 		for(int i=0; i<indexY; i++) {
 			for(int j=0; j<indexX; j++) {
 				dif = 0;
 				for(int m=0; m<8; m++) {
 					for(int n=0; n<8; n++) {
 						//비교하기
-						if(targetChess[n][m] != array[n+j][m+i]) {
+						if(targetChess[n][m] != array[n+j][m+i])
 							dif++;
-						}
 					}
 				}
 				result.add(dif);
