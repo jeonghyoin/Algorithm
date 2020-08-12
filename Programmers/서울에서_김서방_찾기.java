@@ -2,7 +2,7 @@ package algorithm.Programmers.Lv1;
 
 import java.util.Arrays;
 
-public class 서울에서_김서방_칮기 {
+public class 서울에서_김서방_찾기 {
     public static void main(String[] args) {
         // Test case
         String seoul[] = {"Jane", "Kim"};
